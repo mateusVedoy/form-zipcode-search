@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="external.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="col-md-6" style="margin: 5rem auto">
+        <form class="" id="form" method="POST">
+          <div class="form-block">
+            <h1>Diga Olá!</h1>
+          </div>
+            <div class="form-block">
+              <label for="inputEmail4" class="form-label">Nome Completo</label>
+              <input type="text" class="form-control inputClass" id="inputName" minlength="5" maxlength="50" >
+            </div>
+            <div class="form-flex">
+              <div class="col-4">
+                <label for="inputCPF" class="form-label">CPF</label>
+                <input type="text" class="form-control inputClass" id="inputCPF" minlength="11" maxlength="14" >
+              </div>
+              <div class="col-5">
+                <label for="inputCellPhone" class="form-label">Telefone Celular</label>
+              <input type="text" class="form-control inputClass" id="inputCellPhone" minlength="11" maxlength="16" >
+              </div>
+            </div>
+            <div class="form-flex">
+              <div class="col-4">
+                <label for="inputZip" class="form-label">CEP</label>
+                <input type="text" class="form-control inputClass" id="inputZipCode" minlength="8" maxlength="10" >
+              </div>
+              <div class="col-5">
+                <label for="inputAddress" class="form-label">Endereço</label>
+                <input type="text" class="form-control inputClass" id="inputAddress" >
+              </div>
+            </div>
+            <div class="form-flex">
+              <div class="col-4">
+                <label for="inputCity" class="form-label">Bairro</label>
+                <input type="text" class="form-control inputClass" id="inputCityNeighborhood" >
+              </div>
+              <div class="col-5">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control inputClass" id="inputCity" >
+              </div>
+            </div>
+            <div class="form-flex">
+              <div class="col-4">
+                <label for="inputState" class="form-label">Estado</label>
+                <select id="inputState" class="form-control inputClass" id="inputState" >
+                  <option selected>Selecione...</option>
+                </select>
+              </div>
+              <div class="col-5">
+                <label for="inputCityNeighborhoodNumber" class="form-label">Número</label>
+                <input type="text" class="form-control inputClass" id="inputCityNeighborhoodNumber" >
+              </div>
+            </div>
+            <div class="form-flex">
+                <button type="submit" class="btn btn-primary" id="submitBtn">Cadastrar</button>
+            </div>
+            <div class="form-flex">
+              <button type="button" class="btn btn-danger" id="cleanBtn">Limpar</button>
+            </div>
+          </form>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.js" integrity="sha512-II/TvxJGs27N3NEu/WWRFtyhBdSByZwS5ovX1vHXVsi2JXj0I5hRvHwgBPKbzZDk0wsKVDoEUEI8rAYGEF394A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="events.js"></script>
+    <script src="inputsMasks.js"></script>
+    <script src="inputsPatternValidation.js"></script>
+</body>
+</html>
